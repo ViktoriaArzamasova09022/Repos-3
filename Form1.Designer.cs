@@ -180,7 +180,7 @@
             // 
             // listBox1
             // 
-            this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 20;
             this.listBox1.Location = new System.Drawing.Point(3, 3);
@@ -190,10 +190,11 @@
             // 
             // tableLayoutPanel2
             // 
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80.7947F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 19.2053F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 122F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 123F));
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.label2, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.label3, 1, 0);
@@ -211,7 +212,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 65);
+            this.label1.Size = new System.Drawing.Size(118, 65);
             this.label1.TabIndex = 0;
             this.label1.Text = "00";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -221,9 +222,9 @@
             this.label2.AutoSize = true;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.label2.Location = new System.Drawing.Point(157, 0);
+            this.label2.Location = new System.Drawing.Point(156, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 65);
+            this.label2.Size = new System.Drawing.Size(118, 65);
             this.label2.TabIndex = 2;
             this.label2.Text = "00";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -233,7 +234,7 @@
             this.label3.AutoSize = true;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21F);
-            this.label3.Location = new System.Drawing.Point(128, 0);
+            this.label3.Location = new System.Drawing.Point(127, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(23, 65);
             this.label3.TabIndex = 3;
@@ -246,13 +247,14 @@
             // 
             // forTimer
             // 
-            this.forTimer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.forTimer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.forTimer.Location = new System.Drawing.Point(423, 385);
             this.forTimer.Name = "forTimer";
             this.forTimer.Size = new System.Drawing.Size(94, 65);
             this.forTimer.TabIndex = 4;
             this.forTimer.Text = "Новый рекорд";
             this.forTimer.UseVisualStyleBackColor = true;
+            this.forTimer.Click += new System.EventHandler(this.forTimer_Click);
             // 
             // Miner
             // 

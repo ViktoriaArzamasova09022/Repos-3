@@ -26,13 +26,7 @@ namespace Сапер__лабораторная_4_
 
         public Miner()
         {
-            InitializeComponent();            
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            field = new FieldButton[width, height];
-            GenerateField();
+            InitializeComponent();
             timer1.Interval = 500;
             label3.Visible = true;
             min = 0;
@@ -40,6 +34,13 @@ namespace Сапер__лабораторная_4_
             ms = 0;
             label1.Text = "00";
             label2.Text = "00";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            field = new FieldButton[width, height];
+            GenerateField();
+           
         }
 
         public void GenerateField()
@@ -247,6 +248,11 @@ namespace Сапер__лабораторная_4_
         {
             AboutProgram aboutProgram = new AboutProgram();
             aboutProgram.Show();
+        }
+
+        private void forTimer_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
